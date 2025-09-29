@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a doula Tamyres Lima. Agende uma conversa para conhecer os serviços de apoio durante gravidez, parto e pós-parto.">
+    <meta name="keywords" content="contato doula, agendar consulta, Tamyres Lima, São Paulo, WhatsApp, Instagram">
+    <meta name="author" content="Tamyres Lima">
+    
+    <title>Contato | Tamyres Lima - Doula</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html">
+                    <img src="assets/logomarca.png" alt="Tamyres Lima - Doula" class="logo">
+                </a>
+                
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="doula.html">O que é Doula</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="beneficios.html">Benefícios</a></li>
+                        <li><a href="depoimentos.html">Depoimentos</a></li>
+                        <li><a href="dicas.html">Dicas</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="menu-toggle" aria-label="Menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Entre em Contato</h1>
+                    <p>Vamos conversar sobre como posso apoiar você nesta jornada especial</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mensagem de Boas-vindas -->
+        <section class="section">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h2 class="section-title">Vamos nos Conhecer?</h2>
+                    <p style="font-size: 1.2rem; color: var(--marrom-medio); margin-bottom: 2rem;">
+                        Estou aqui para esclarecer suas dúvidas, conhecer suas necessidades e conversar sobre como posso apoiar você durante a gravidez, parto e pós-parto. Cada família é única, e meu trabalho é personalizado para atender exatamente o que você precisa.
+                    </p>
+                    <p style="font-size: 1.1rem; color: var(--tom-complementar);">
+                        Entre em contato através do formulário abaixo, WhatsApp ou redes sociais. Será um prazer conversar com você!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato e Informações -->
+        <section class="section" style="background-color: white;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+                    
+                    <!-- Formulário -->
+                    <div>
+                        <h3 style="margin-bottom: 2rem; color: var(--marrom-medio);">Envie sua Mensagem</h3>
+                        
+                        <form id="contact-form" class="form-container">
+                            <div class="form-group">
+                                <label for="name">Nome Completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Telefone/WhatsApp</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="pregnancy-stage">Estágio da Gravidez</label>
+                                <select id="pregnancy-stage" name="pregnancy-stage">
+                                    <option value="">Selecione...</option>
+                                    <option value="tentando-engravidar">Tentando engravidar</option>
+                                    <option value="1-trimestre">1º Trimestre (1-12 semanas)</option>
+                                    <option value="2-trimestre">2º Trimestre (13-27 semanas)</option>
+                                    <option value="3-trimestre">3º Trimestre (28-40 semanas)</option>
+                                    <option value="pos-parto">Pós-parto</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service-interest">Serviço de Interesse</label>
+                                <select id="service-interest" name="service-interest">
+                                    <option value="">Selecione...</option>
+                                    <option value="acompanhamento-completo">Acompanhamento Completo</option>
+                                    <option value="apoio-pre-natal">Apoio Pré-Natal</option>
+                                    <option value="apoio-parto">Apoio no Parto</option>
+                                    <option value="consultoria-amamentacao">Consultoria em Amamentação</option>
+                                    <option value="apoio-pos-parto">Apoio Pós-Parto</option>
+                                    <option value="ainda-nao-sei">Ainda não sei</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensagem *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Conte-me um pouco sobre você, suas expectativas e como posso ajudar..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Informações de Contato -->
+                    <div>
+                        <h3 style="margin-bottom: 2rem; color: var(--marrom-medio);">Informações de Contato</h3>
+                        
+                        <div class="card" style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--azul-medio); margin-bottom: 1.5rem;">📱 Contato Direto</h4>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <strong>WhatsApp:</strong><br>
+                                <a href="https://wa.me/5579998087772?text=Olá! Gostaria de saber mais sobre os serviços de doula." 
+                                   target="_blank" 
+                                   style="color: var(--azul-medio); font-size: 1.1rem;">
+                                   (79) 99808-7772
+                                </a>
+                                <p style="font-size: 0.9rem; color: var(--tom-complementar); margin-top: 0.5rem;">
+                                    Resposta rápida • Disponível das 8h às 20h
+                                </p>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <strong>E-mail:</strong><br>
+                                <a href="mailto:doulatamyreslima@gmail.com" style="color: var(--azul-medio); font-size: 1.1rem;">
+                                    doulatamyreslima@gmail.com
+                                </a>
+                                <p style="font-size: 0.9rem; color: var(--tom-complementar); margin-top: 0.5rem;">
+                                    Resposta em até 24 horas
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <strong>Localização:</strong><br>
+                                <span style="color: var(--marrom-escuro);">Aracaju, SE</span>
+                                <p style="font-size: 0.9rem; color: var(--tom-complementar); margin-top: 0.5rem;">
+                                    Atendo toda a Grande Aracaju
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--azul-medio); margin-bottom: 1.5rem;">🌐 Redes Sociais</h4>
+                            
+                            <div style="margin-bottom: 1rem;">
+                                <a href="https://www.instagram.com/doulatamyreslima/" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; color: var(--marrom-escuro); text-decoration: none; margin-bottom: 1rem;">
+                                    <span style="font-size: 1.5rem;">📷</span>
+                                    <div>
+                                        <strong>Instagram</strong><br>
+                                        <span style="font-size: 0.9rem; color: var(--tom-complementar);">@doulatamyreslima</span>
+                                    </div>
+                                </a>
+                                <p style="font-size: 0.9rem; color: var(--tom-complementar);">
+                                    Dicas diárias, histórias reais e conteúdo educativo sobre maternidade
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h4 style="color: var(--azul-medio); margin-bottom: 1.5rem;">⏰ Horários de Atendimento</h4>
+                            
+                            <div style="font-size: 0.95rem;">
+                                <p><strong>Segunda a Sexta:</strong> 8h às 18h</p>
+                                <p><strong>Sábado:</strong> 8h às 14h</p>
+                                <p><strong>Domingo:</strong> Emergências</p>
+                                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--tom-complementar);">
+                                    <strong>Plantão 24h:</strong> Disponível a partir da 37ª semana para clientes do pacote parto
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botões de Ação Rápida -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Prefere Contato Direto?</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 800px; margin: 0 auto;">
+                    
+                    <div class="card" style="text-align: center; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); color: white;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📱</div>
+                        <h3 style="color: white; margin-bottom: 1rem;">WhatsApp</h3>
+                        <p style="margin-bottom: 2rem;">Conversa rápida e direta para esclarecer dúvidas</p>
+                        <a href="https://wa.me/5579998087772?text=Olá! Gostaria de saber mais sobre os serviços de doula." 
+                           target="_blank" 
+                           class="btn" 
+                           style="background-color: white; color: #25D366;">
+                           Chamar no WhatsApp
+                        </a>
+                    </div>
+                    
+                    <div class="card" style="text-align: center; background: linear-gradient(135deg, #E4405F 0%, #C13584 100%); color: white;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📷</div>
+                        <h3 style="color: white; margin-bottom: 1rem;">Instagram</h3>
+                        <p style="margin-bottom: 2rem;">Acompanhe dicas diárias e mande direct</p>
+                        <a href="https://www.instagram.com/doulatamyreslima/" 
+                           target="_blank" 
+                           class="btn" 
+                           style="background-color: white; color: #E4405F;">
+                           Seguir no Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Rápido -->
+        <section class="section" style="background-color: white;">
+            <div class="container">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="cards-grid" style="grid-template-columns: 1fr;">
+                        
+                        <div class="card" style="border-left: 4px solid var(--azul-medio);">
+                            <h4 style="color: var(--azul-medio); margin-bottom: 1rem;">Quando devo entrar em contato?</h4>
+                            <p>O ideal é entrar em contato assim que souber da gravidez ou quando começar a pensar em ter apoio durante o parto. Quanto antes conversarmos, melhor posso planejar seu acompanhamento.</p>
+                        </div>
+                        
+                        <div class="card" style="border-left: 4px solid var(--marrom-medio);">
+                            <h4 style="color: var(--marrom-medio); margin-bottom: 1rem;">A primeira conversa é paga?</h4>
+                            <p>Não! A primeira conversa é sempre gratuita. É um momento para nos conhecermos, você tirar suas dúvidas e eu entender suas necessidades para elaborar uma proposta personalizada.</p>
+                        </div>
+                        
+                        <div class="card" style="border-left: 4px solid var(--tom-complementar);">
+                            <h4 style="color: var(--tom-complementar); margin-bottom: 1rem;">Atende em que regiões?</h4>
+                            <p>Atendo toda a Grande São Paulo. Para regiões mais distantes, podemos conversar sobre as condições de deslocamento e hospedagem quando necessário.</p>
+                        </div>
+                        
+                        <div class="card" style="border-left: 4px solid var(--azul-claro);">
+                            <h4 style="color: var(--azul-claro); margin-bottom: 1rem;">Quanto tempo demora para responder?</h4>
+                            <p>Por WhatsApp, geralmente respondo em algumas horas. Por e-mail, em até 24 horas. Em casos de urgência (clientes em trabalho de parto), a resposta é imediata.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Final -->
+        <section class="section" style="background: linear-gradient(135deg, var(--azul-claro) 0%, var(--azul-medio) 100%); color: white;">
+            <div class="container" style="text-align: center;">
+                <h2 style="color: white;">Pronta para Começar?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                    Estou aqui para apoiar você em cada passo desta jornada única e transformadora
+                </p>
+                
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="#contact-form" class="btn" style="background-color: white; color: var(--azul-medio);">Preencher Formulário</a>
+                    <a href="https://wa.me/5579998087772?text=Olá! Gostaria de agendar uma conversa sobre os serviços de doula." 
+                       class="btn btn-secondary" 
+                       style="border-color: white; color: white;"
+                       target="_blank">WhatsApp Direto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Tamyres Lima</h4>
+                    <p>Doula certificada</p>
+                    <p>Acolhendo vidas, cuidando de histórias</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <a href="index.html">Início</a>
+                    <a href="doula.html">O que é Doula</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a href="beneficios.html">Benefícios</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Mais Informações</h4>
+                    <a href="depoimentos.html">Depoimentos</a>
+                    <a href="dicas.html">Dicas</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📧 tamyres@email.com</p>
+                    <p>📱 (79) 99808-7772</p>
+                    <p>📍 Aracaju-SE</p>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://wa.me/5579998087772" target="_blank" aria-label="WhatsApp">📱</a>
+                <a href="https://www.instagram.com/doulatamyreslima/" target="_blank" aria-label="Instagram">📷</a>
+                <a href="mailto:doulatamyreslima@gmail.com" aria-label="E-mail">📧</a>
+            </div>
+            
+            <p style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                © 2025 Tamyres Lima - Doula. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+    <style>
+        /* Responsividade específica para a página de contato */
+        @media (max-width: 768px) {
+            .container > div[style*="grid-template-columns: 1fr 1fr"] {
+                display: block !important;
+            }
+            
+            .container > div[style*="grid-template-columns: 1fr 1fr"] > div:first-child {
+                margin-bottom: 3rem;
+            }
+        }
+    </style>
+</body>
+</html>
+

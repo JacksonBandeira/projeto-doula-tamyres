@@ -1,0 +1,145 @@
+I need you to create a static, responsive, and creative website using only pure HTML, CSS, and JavaScript (no frameworks or libraries). The site is for a professional doula named Tamyres Lima, and it must be written entirely in Brazilian Portuguese.
+
+🔧 Technical Requirements:
+Use semantic HTML optimized for basic SEO.
+
+CSS must be clean and organized, with variables for colors and reusable styles.
+
+JavaScript should be pure and used for interactivity (e.g., testimonial carousel and mobile menu).
+
+All code must be clearly commented to help beginners understand and customize it.
+
+Ensure full responsiveness using Flexbox and CSS Grid (mobile → tablet → desktop).
+
+Include smooth animations (hover effects, fade-in, slide-in).
+
+No backend — the contact form is front-end only.
+
+Include direct links to WhatsApp and Instagram.
+
+📁 File Structure:
+Código
+/index.html  
+/sobre.html  
+/doula.html  
+/servicos.html  
+/beneficios.html  
+/depoimentos.html  
+/dicas.html  
+/contato.html  
+/assets/
+  └── imagens/
+  └── icones/
+  └── logotipo/
+  └── perfil/
+/css/style.css  
+/js/script.js
+🎨 Visual Identity:
+Logo: Silhouette of a woman holding a baby, circular mandala in blue, with the text “Tamyres Lima” in elegant cursive and “doula” in simple font.
+
+Color Palette:
+
+Medium Blue: #4BAABF (buttons, links, highlights)
+
+Light Blue: #9BBFBC (secondary section backgrounds)
+
+Light Beige: #F2EDD5 (general background)
+
+Medium Brown: #592A0F (titles and key text)
+
+Dark Brown: #401E0B (header, footer, contrast elements)
+
+Optional complementary tones: #8C7158
+
+Typography:
+
+Titles: Google Font “Great Vibes” or similar cursive
+
+Body text: Google Font “Open Sans” or similar clean sans-serif
+
+📄 Page Structure:
+1. Home (index.html)
+Hero section with image of a pregnant woman and the phrase: “Acolhendo vidas, cuidando de histórias”
+
+Section “Sobre mim” with real photo of Tamyres, subtitle: “Conheça minha trajetória e missão” and a short bio.
+
+2. Doula (doula.html)
+Explanation of what a doula is.
+
+Cards with icons for:
+
+Emotional Support
+
+Pain Relief Techniques
+
+Evidence-Based Information
+
+Bond Strengthening
+
+3. Services (servicos.html)
+Responsive cards for:
+
+Prenatal Support
+
+Birth Support
+
+Breastfeeding Consulting
+
+Postpartum Support
+
+Each card includes a circular blue icon at the top.
+
+4. Benefits (beneficios.html)
+Grid of cards with statistics (e.g., 25%, 50% reduction in labor duration).
+
+Icons and short scientific notes.
+
+Include source references like WHO, Cochrane Reviews, ACOG.
+
+Additional section with emotional benefits (e.g., stronger mother-baby bond, reduced anxiety).
+
+5. Testimonials (depoimentos.html)
+JavaScript carousel with real quotes.
+
+Centered box with beige background and dark brown text.
+
+Include name and relationship (e.g., “Maria Silva, mãe do João”).
+
+6. Tips (dicas.html)
+Cards or list with icons for:
+
+Nutrition
+
+Breathing
+
+Birth Plan
+
+Emotional Preparation
+
+Prenatal Care
+
+Breastfeeding
+
+Self-care
+
+7. Contact (contato.html)
+Title: “Entre em contato”
+
+Welcoming message
+
+Contact form (name, email, message) inside a light blue card
+
+Button: “Enviar mensagem” in medium blue
+
+Section with location, phone, Instagram, and WhatsApp button with icons
+
+🧠 Additional Notes:
+Use the provided visual prototypes (Photoshop) as layout reference.
+
+Use the provided logo files and profile photo of Tamyres in the “Sobre mim” section.
+
+Use the provided work photos in relevant sections.
+
+The header and footer must be consistent across all pages.
+
+Footer should use a light brown background and include social/contact links.

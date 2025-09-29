@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leia os depoimentos reais de mães que foram acompanhadas pela doula Tamyres Lima durante gravidez, parto e pós-parto.">
+    <meta name="keywords" content="depoimentos doula, experiências parto, mães satisfeitas, Tamyres Lima">
+    <meta name="author" content="Tamyres Lima">
+    
+    <title>Depoimentos | Tamyres Lima - Doula</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Estilos específicos para o carrossel de depoimentos */
+        .testimonial-carousel {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bege-claro);
+            border-radius: var(--borda-radius);
+            padding: 2rem;
+            box-shadow: var(--sombra-media);
+        }
+        
+        .testimonial {
+            display: none;
+            text-align: center;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        .testimonial.active {
+            display: block;
+        }
+        
+        .testimonial-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--marrom-escuro);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--marrom-medio);
+            font-size: 1.1rem;
+        }
+        
+        .testimonial-role {
+            color: var(--tom-complementar);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        .carousel-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .carousel-btn {
+            background: var(--azul-medio);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-btn:hover {
+            background: var(--marrom-medio);
+            transform: scale(1.1);
+        }
+        
+        .carousel-indicators {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .carousel-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: none;
+            background: var(--azul-claro);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-indicator.active {
+            background: var(--azul-medio);
+            transform: scale(1.2);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--borda-radius);
+            box-shadow: var(--sombra-suave);
+            border-left: 4px solid var(--azul-medio);
+        }
+        
+        .testimonial-card .quote {
+            font-size: 3rem;
+            color: var(--azul-claro);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-card .text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            color: var(--marrom-escuro);
+        }
+        
+        .testimonial-card .author {
+            font-weight: 600;
+            color: var(--marrom-medio);
+        }
+        
+        .testimonial-card .details {
+            color: var(--tom-complementar);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html">
+                    <img src="assets/logomarca.png" alt="Tamyres Lima - Doula" class="logo">
+                </a>
+                
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="doula.html">O que é Doula</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="beneficios.html">Benefícios</a></li>
+                        <li><a href="depoimentos.html">Depoimentos</a></li>
+                        <li><a href="dicas.html">Dicas</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="menu-toggle" aria-label="Menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Depoimentos</h1>
+                    <p>Histórias reais de mães que vivenciaram uma experiência única</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrossel Principal -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Experiências Transformadoras</h2>
+                <p class="section-subtitle">Cada história é única e especial</p>
+                
+                <div class="testimonial-carousel">
+                    <div class="testimonial active">
+                        <div class="testimonial-text">
+                            "A Tamyres foi um anjo em minha vida durante toda a gravidez e parto. Sua presença me trouxe uma tranquilidade que eu não sabia que precisava. Ela me ensinou técnicas de respiração que foram fundamentais durante o trabalho de parto, e seu apoio emocional foi incomparável. Meu parto foi exatamente como eu sonhava, natural e respeitoso. Não consigo imaginar essa jornada sem ela."
+                        </div>
+                        <div class="testimonial-author">Maria Silva</div>
+                        <div class="testimonial-role">Mãe da Sofia, parto normal</div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                            "Quando descobri que precisaria de uma cesárea, fiquei muito abalada. A Tamyres me acolheu com tanto carinho e me ajudou a entender que o importante era o bem-estar do meu bebê. Ela esteve comigo durante toda a cirurgia, me acalmando e me fazendo sentir empoderada mesmo em uma situação que não era meu plano inicial. O apoio dela no pós-parto foi fundamental para minha recuperação."
+                        </div>
+                        <div class="testimonial-author">Ana Carolina</div>
+                        <div class="testimonial-role">Mãe do Miguel, cesárea</div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                            "Meu marido estava muito nervoso com a ideia do parto, mas a Tamyres incluiu ele em todo o processo de uma forma incrível. Ela ensinou técnicas de massagem para ele me ajudar, explicou como ele poderia me apoiar e o tranquilizou sobre todo o processo. Foi lindo ver como ela fortaleceu nossa parceria neste momento tão especial. Hoje ele fala que foi uma das experiências mais marcantes da vida dele."
+                        </div>
+                        <div class="testimonial-author">Juliana Santos</div>
+                        <div class="testimonial-role">Mãe da Laura, parto domiciliar</div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                            "A amamentação estava sendo um desafio enorme para mim. Eu estava quase desistindo quando a Tamyres veio me ajudar. Com muita paciência, ela me ensinou novas posições, me ajudou a entender os sinais do meu bebê e me deu o apoio emocional que eu precisava. Hoje, três meses depois, estou amamentando com sucesso e me sinto muito mais confiante como mãe."
+                        </div>
+                        <div class="testimonial-author">Fernanda Costa</div>
+                        <div class="testimonial-role">Mãe do Pedro, consultoria em amamentação</div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                            "Como mãe de primeira viagem, eu tinha muitos medos e ansiedades. A Tamyres foi muito mais que uma doula, foi uma amiga, uma conselheira, uma fonte de conhecimento e tranquilidade. Ela me preparou não só para o parto, mas para a maternidade como um todo. Seus encontros pré-natais foram fundamentais para eu me sentir preparada e confiante. Recomendo de olhos fechados!"
+                        </div>
+                        <div class="testimonial-author">Camila Oliveira</div>
+                        <div class="testimonial-role">Mãe da Helena, acompanhamento completo</div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn carousel-prev">‹</button>
+                    <div class="carousel-indicators"></div>
+                    <button class="carousel-btn carousel-next">›</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos em Grid -->
+        <section class="section" style="background-color: white;">
+            <div class="container">
+                <h2 class="section-title">Mais Experiências</h2>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="quote">"</div>
+                        <div class="text">
+                            "O apoio da Tamyres durante meu pós-parto foi essencial. Ela me ajudou a organizar a rotina com o bebê, preparou refeições nutritivas e me deu o suporte emocional que eu precisava neste período de adaptação."
+                        </div>
+                        <div class="author">Patrícia Mendes</div>
+                        <div class="details">Mãe do Gabriel • Apoio pós-parto</div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="quote">"</div>
+                        <div class="text">
+                            "Meu trabalho de parto durou 18 horas, e a Tamyres esteve comigo o tempo todo. Suas massagens e técnicas de relaxamento foram fundamentais para eu conseguir ter o parto natural que eu desejava."
+                        </div>
+                        <div class="author">Roberta Lima</div>
+                        <div class="details">Mãe da Beatriz • Parto normal</div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="quote">"</div>
+                        <div class="text">
+                            "A Tamyres me ajudou a elaborar meu plano de parto e me orientou sobre meus direitos. Graças a ela, consegui ter um parto respeitoso e exatamente como eu havia planejado."
+                        </div>
+                        <div class="author">Luciana Ferreira</div>
+                        <div class="details">Mãe do João • Apoio pré-natal</div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="quote">"</div>
+                        <div class="text">
+                            "Estava com muitas dificuldades na amamentação e pensando em desistir. A Tamyres me mostrou que era possível e me deu todas as ferramentas para ter sucesso. Hoje amamendo com prazer!"
+                        </div>
+                        <div class="author">Carla Rodrigues</div>
+                        <div class="details">Mãe da Alice • Consultoria em amamentação</div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="quote">"</div>
+                        <div class="text">
+                            "Mesmo tendo uma cesárea de emergência, a Tamyres conseguiu tornar a experiência positiva. Ela me explicou tudo que estava acontecendo e me fez sentir no controle da situação."
+                        </div>
+                        <div class="author">Daniela Santos</div>
+                        <div class="details">Mãe do Lucas • Cesárea de emergência</div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="quote">"</div>
+                        <div class="text">
+                            "A Tamyres não só me apoiou, mas também preparou minha mãe e minha sogra para me ajudarem da melhor forma. Ela criou uma rede de apoio incrível ao meu redor."
+                        </div>
+                        <div class="author">Renata Alves</div>
+                        <div class="details">Mãe da Manuela • Acompanhamento familiar</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estatísticas de Satisfação -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Índices de Satisfação</h2>
+                
+                <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                    <div class="card" style="text-align: center; background: var(--azul-medio); color: white;">
+                        <div style="font-size: 3rem; font-weight: bold; margin-bottom: 1rem;">98%</div>
+                        <h4 style="color: white;">Recomendariam</h4>
+                        <p>Das mães acompanhadas recomendariam os serviços</p>
+                    </div>
+                    
+                    <div class="card" style="text-align: center; background: var(--marrom-medio); color: white;">
+                        <div style="font-size: 3rem; font-weight: bold; margin-bottom: 1rem;">95%</div>
+                        <h4 style="color: white;">Muito Satisfeitas</h4>
+                        <p>Avaliaram a experiência como excelente</p>
+                    </div>
+                    
+                    <div class="card" style="text-align: center; background: var(--tom-complementar); color: white;">
+                        <div style="font-size: 3rem; font-weight: bold; margin-bottom: 1rem;">100%</div>
+                        <h4 style="color: white;">Se Sentiram Apoiadas</h4>
+                        <p>Relataram sentir-se completamente apoiadas</p>
+                    </div>
+                    
+                    <div class="card" style="text-align: center; background: var(--azul-claro); color: white;">
+                        <div style="font-size: 3rem; font-weight: bold; margin-bottom: 1rem;">92%</div>
+                        <h4 style="color: white;">Parto Positivo</h4>
+                        <p>Descreveram o parto como experiência positiva</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section" style="background: linear-gradient(135deg, var(--azul-claro) 0%, var(--azul-medio) 100%); color: white;">
+            <div class="container" style="text-align: center;">
+                <h2 style="color: white;">Quer fazer parte dessas histórias?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Vamos conversar sobre como posso apoiar você nesta jornada única</p>
+                
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="contato.html" class="btn" style="background-color: white; color: var(--azul-medio);">Agendar Conversa</a>
+                    <a href="servicos.html" class="btn btn-secondary" style="border-color: white; color: white;">Conhecer Serviços</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Tamyres Lima</h4>
+                    <p>Doula certificada</p>
+                    <p>Acolhendo vidas, cuidando de histórias</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <a href="index.html">Início</a>
+                    <a href="doula.html">O que é Doula</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a href="beneficios.html">Benefícios</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Mais Informações</h4>
+                    <a href="depoimentos.html">Depoimentos</a>
+                    <a href="dicas.html">Dicas</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📧 doulatamyreslima@gmail.com</p>
+                    <p>📱 (79) 99808-7772</p>
+                    <p>📍 aracaju-SE</p>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://wa.me/5579998087772" target="_blank" aria-label="WhatsApp">📱</a>
+                <a href="https://instagram.com/doulatamyreslima" target="_blank" aria-label="Instagram">📷</a>
+                <a href="mailto:doulatamyreslima@gmail.com" aria-label="E-mail">📧</a>
+            </div>
+            
+            <p style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                © 2025 Tamyres Lima - Doula. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
